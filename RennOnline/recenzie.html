@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Atestat</title>
+<link rel="stylesheet" type="text/css" href="src/recenzie.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta charset="UTF-8">
+</head>
+<body>
+
+
+
+
+
+<div class="patrat">
+</div>
+
+
+<nav>
+<ul class="navbar">
+
+<li class="element" style="position:absolute;left:1%;">
+		<div class="dropdown">
+  <button class="dropbtn">Echipamente</button>
+  <div class="dropdown-content">
+    <a href="magazin.php">Iarna</a>
+    <a href="magazin.php#toamna">Toamna</a>
+    <a href="magazin.php#primavara">Primavara</a>
+	 <a href="magazin.php#vara">Vara</a>
+  </div>
+</div>
+</li>
+<li class="element"style="position:absolute;left:13%;"><div class="dropdown">
+  <a href="magazin.php#imbracaminte"> <button class="dropbtn">Imbracaminte</button></a>
+  <div class="dropdown-content">
+    
+    
+  </div>
+</div></li>
+<li class="element"style="position:absolute;left:25%;"><div class="dropdown">
+ <a href="magazin.php#accesorii"> <button class="dropbtn">Accesorii</button></a>
+  <div class="dropdown-content">
+    
+   
+  </div>
+</div></li>
+
+</ul>
+</nav>
+<div class="imagine2"></div>
+
+<a href="index.html"><img src="src/imagini/logo3.jpg" class="logo"></a>
+
+<nav>
+<ul class="bara">
+
+                                         
+<li class="element2"><i class="glyphicon glyphicon-shopping-cart" style="font-size:23px;"></i></li>
+<li class="element2"><a href ="cart.php">Cosul Meu</a></li>
+</ul>
+</nav>
+
+<div class="patrat5">
+<div class="w3-container w3-blue">
+  <div style="background:rgba(161, 181, 216,1);color:white;;width:100%;position:relative;height:70px;text-align:center;font-size:40px;border:2px dotted white;">Ofera-ne Parerea Ta!</div>
+</div>
+<br>
+<form action="mailto:tinel_valentin@yahoo.com" class="w3-container" method="POST" enctype=”multipart/form-data”>
+
+ <center> <p style="font-size:20px;font-weight:bold;">Nume</p><i class="glyphicon glyphicon-user"></i>
+  <input class="w3-input" type="text" name="nume" style="width:30%;"></p>
+
+ <p style="font-size:20px;font-weight:bold;">Prenume</p><i class="glyphicon glyphicon-user"></i>
+  <input class="w3-input" type="text" name="prenume"style="width:30%;"></p>
+
+<p style="font-size:20px;font-weight:bold;">Email</p><i class="glyphicon glyphicon-envelope"></i>
+  <input class="w3-input" type="text" name="email"style="width:30%;"><br><br></p>
+<p style="font-size:20px;font-weight:bold;">Comentariu   <i class="glyphicon glyphicon-pencil"></i></p>
+   <textarea name="com" rows="3" cols="60"style="position:relative;left:0%;"></textarea><br>
+
+
+
+ <div class="stars" data-rating="3">
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+        <span class="star">&nbsp;</span>
+    </div><br>
+<input type="submit" value="Trimite" style="width:80px;color:black;background:white;margin-left:20px;margin-top:-10px;">
+</div>
+
+
+</form>
+
+<div class="contacte1">
+<i class="glyphicon glyphicon-user"></i>Carmaciu Tinel-Valentin  
+<i class="glyphicon glyphicon-user"style="margin-left:10px;margin-right:2px;"></i>Prof. Coordonator:Cirstea Cornelia  
+<i class="glyphicon glyphicon-home"style="margin-left:10px;margin-right:2px;"></i>Liceul Teoretic Alexandru Marghiloman  
+<i class="glyphicon glyphicon-envelope"style="margin-left:10px;margin-right:2px;"></i>Tinel_valentin@yahoo.com  
+<i class="glyphicon glyphicon-earphone"style="margin-left:10px;margin-right:2px;"></i>0763217542
+</div>
+<script>
+
+
+
+ //initial setup
+        document.addEventListener('DOMContentLoaded', function(){
+            let stars = document.querySelectorAll('.star');
+            stars.forEach(function(star){
+                star.addEventListener('click', setRating); 
+            });
+            
+            let rating = parseInt(document.querySelector('.stars').getAttribute('data-rating'));
+            let target = stars[rating - 1];
+            target.dispatchEvent(new MouseEvent('click'));
+        });
+
+        function setRating(ev){
+            let span = ev.currentTarget;
+            let stars = document.querySelectorAll('.star');
+            let match = false;
+            let num = 0;
+            stars.forEach(function(star, index){
+                if(match){
+                    star.classList.remove('rated');
+                }else{
+                    star.classList.add('rated');
+                }
+                //are we currently looking at the span that was clicked
+                if(star === span){
+                    match = true;
+                    num = index + 1;
+                }
+            });
+            document.querySelector('.stars').setAttribute('data-rating', num);
+        }
+</script>
+</body>
+</html>

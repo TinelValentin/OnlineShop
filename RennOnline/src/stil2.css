@@ -1,0 +1,331 @@
+
+body{
+background-color:rgba(67, 92, 142, 0.1) !important;
+overflow-x:hidden;}
+ 
+
+.navbar {
+	list-style: none; /* Bara sus*/
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width:103%;
+	height:75px;
+	margin-top:-1px;
+	left:-1%;
+	background:#01001c;
+	border-radius:5px;
+	 overflow:hiddeen;
+	 border-top:1px solid black;
+	
+	
+display:flex;}
+	
+	.element { /* element din lista*/
+		
+	 color:white;
+	 font-size:28px;
+	 text-decoration:none;
+	 font-weight:bold;
+	 font-family:sans-serif;
+	 padding: 10px;
+	 padding-left:36px;
+	 padding-top:15px;
+	
+	}
+	
+	.element a { /* link eelement din lista */
+	text-decoration:none;
+	color:inherit !important ;
+	
+	
+	}
+	
+	 a:hover{ /* hover link */
+	 color:white;
+	 text-shadow:1px 1px 1px white;
+	 
+	 }
+	 
+
+.imagine2{  /* Paatrat albastru */ 
+	
+	width:99%;
+	height:200px;
+	background:url("imagini/fundal1.jpg");
+margin-top:-17px;
+position:absolute;
+background-size:cover;
+background-repeat:no-repeat;
+max-width:100%;
+max-height:100%;
+border:1px ridge black;
+	
+}
+
+
+.patrat {
+	float:right;
+	
+	position: relative;
+	padding: 0;
+	margin: 0;
+	left:1%;
+	width:103%;
+	margin-top:-1%;
+	
+	height:40px;
+	background: url("imagini/1.jpg"); 
+	background-size:contain;
+	 
+	;
+	
+	
+}
+
+
+.logo{
+	height:140px;
+	border-radius:50%;
+	position:relative;
+	left:39%;
+	margin-top:-9%;
+}
+.dropdown {
+  position: relative;
+ 
+  display: inline-block;
+  
+}
+
+.dropbtn {
+  background-color: #01001c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bacff5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:5px;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ font-size:15px;
+}
+
+
+.dropdown-content a:hover {
+background-color:#a9c8f5;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {;
+text-shadow:1px 1px 1px white;}
+
+
+
+
+
+.bara {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	box-shadow:1px 1px 15px 1px #000000;
+	justify-content: flex-end;
+	position: relative;
+	width:93%;
+	height:50px;
+	margin-top:12%;
+	left:4%;
+	background:linear-gradient(60deg,rgba(1, 0, 28, 0.95),rgba(1, 0, 28, 1));
+	 transform: skew(30deg);
+	 overflow:hiddeen;
+	 border-top:1px solid black;
+	 border-bottom:1px solid #435c8e;
+	 z-index:1;
+	
+display:flex;}
+	
+	.element2 {
+		
+	 color:white;
+	 font-size:20px;
+	 text-decoration:none;
+	 font-weight:bold;
+	 font-family:sans-serif;
+	 padding: 10px;
+	 padding-left:5px;
+	 padding-right:15px;
+	 
+	 transform: skew(-30deg);
+
+	
+	}
+	
+		.element2 a {
+	text-decoration:none;
+	color:inherit !important;
+	
+	
+	}
+	
+	 a:hover{
+	
+	 color:inherit;
+	 text-shadow:1px 1px 1px white;
+	 
+	 }
+
+
+
+.patrat5{
+	width:90%;
+	position:relative;
+	left:6%;
+	height:80%;
+	background-color:#777e91;
+	border:1px solid black;
+}
+
+a.cumpara{
+display:inline-block;
+position:absolute;
+font-size:15px;
+padding:5px 5px;
+border:1px solid #FFFFFF;
+margin-top:25%;
+
+margin-left:-18%;
+color:white;
+border-radius:10px;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+text-align:center;
+width:180px;
+height:30px;
+transition: all 0.2s;
+box-shadow:0 0 10px #000000;
+}
+a.cumpara:hover{
+color:#000000;
+background-color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ribbon {/*dreptunghi principal funda */
+     width: 300px;
+     position: absolute;
+	 left:35%;
+     text-align: center;
+     font-size: 20px !important;
+     background: #D64B4B;
+     background: -webkit-linear-gradient(top, white, #d1cdcd);
+     box-shadow: rgba(0,0,0,0.3) 0 1px 1px;
+     font-family: 'Helvetica Neue',Helvetica, sans-serif;
+	 z-index:1;
+	
+}
+
+.ribbon p {/*scris*/
+     font-size: 25px !important;
+     color: #091d47;
+     text-shadow: black 0 1px 0;
+     margin:0px;
+     padding: 15px 10px;
+	
+	 
+}
+
+
+.ribbon:after {/*triunghi jos mic */
+     right: -2em;
+     border-left-width: 1.5em;
+     border-right-color: transparent;
+     -webkit-box-shadow: rgba(0,0,0,0.4) -1px 1px 1px;
+     -moz-box-shadow: rgba(0,0,0,0.4) -1px 1px 1px;
+     box-shadow: rgba(0,0,0,0.4) -1px 1px 1px;
+	
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after { /*triunghi jos mic */
+     border-color: #a1a1a1 transparent transparent transparent;
+     position: absolute;
+     display: block;
+     border-style: solid;
+     bottom: -1em;
+     content: '';
+	 z-index:1;
+	 
+}
+
+.ribbon .ribbon-content:before { /*triunghi jos mic stanga*/
+     left: 0;
+     border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after { /*triunghi jos mic dreapta*/
+     right: 0;
+     border-width: 1em 1em 0 0;
+}
+
+
+
+
+
+.plus /*bara cu articol */
+{
+	width:100%;
+	height:200px;
+	background:#50505c;
+	display:flex;
+	align-items:center;
+}
+.umplut{
+	width:95%;
+	height:87%;
+	background:#a7afc4;
+	margin:0 auto;
+	border-radius:10px;
+	display:flex;
+}
+
+
+
+.contacte1{
+width:100%;
+margin-top:10px;
+height:33px;
+background:url("imagini/1.jpg");
+background-size:contain;
+color:white;
+text-align:center;
+font-weight:bold;
+padding-top:10px;
+}
